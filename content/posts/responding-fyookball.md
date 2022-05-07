@@ -1,7 +1,7 @@
 ---
 title: "Responding to Jonald Fyookball's article on 'Lightning Network's Infeasibility'"
 date: 2017-06-27
-draft: true
+submitted: true
 ---
 
 I have just read [Jonald Fyookball's article](https://medium.com/@jonaldfyookball/mathematical-proof-that-the-lightning-network-cannot-be-a-decentralized-bitcoin-scaling-solution-1b8147650800) which claims to provide mathematical proof that the Lightning Network will fail to provide a 'Decentralized Bitcoin Scaling Solution'.

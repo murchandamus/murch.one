@@ -1,7 +1,9 @@
 ---
 title: "A breakdown of different output types and their address formats"
 date: 2021-12-23
-draft: true
+submitted: true
+categories: [bitcoin]
+tags: [transactions,output-types]
 ---
 
 I was inspired by a recent [reddit post](https://www.reddit.com/r/Bitcoin/comments/rjdao2/people_keep_asking_me_about_the_different_types/) to write my own description of the various single-sig output formats in Bitcoin. I’ll be covering only output types that make use of a single signature.
@@ -62,8 +64,7 @@ Issues:
 
 ## Cost Considerations
 
-![Table with overview of raw length, weight, and vsize of output types](/images/output-types.png)
-Byte length vs weight vs vsize for single-sig output types
+{{< figure src="/images/output-types.png" alt="Table with overview of raw length, weight, and vsize of output types" class="center" >}}
 
 All four described output types satisfy single-sig usage, although P2TR can do a lot more under the hood. Generally, the transaction cost is cheaper for newer output types: Legacy > Wrapped Segwit > Native Segwit. While the overall cost of P2TR input and output is slightly higher than that of P2WPKH, P2TR shifts a portion of the cost from the input to the output. When you don’t know at what feerate you’ll need to pay to spend your funds later, you should keep them in P2TR outputs, since they’ll have the smallest input cost. Likewise, you should prefer P2TR when others are paying you: the sender pays the output cost while the recipient pays the input cost. Although, you may still bump into some counter-parties that cannot send to bech32, and many that cannot send to bech32m, yet, the economic incentives are clear. If your preferred wallet or service doesn’t support bech32(m) yet, please do ask them to do so.
 
