@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://murch.one/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Murch ado about nothing"
+theme = "zen"
