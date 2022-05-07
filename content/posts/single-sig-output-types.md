@@ -6,7 +6,7 @@ draft: true
 
 I was inspired by a recent [reddit post](https://www.reddit.com/r/Bitcoin/comments/rjdao2/people_keep_asking_me_about_the_different_types/) to write my own description of the various single-sig output formats in Bitcoin. I’ll be covering only output types that make use of a single signature.
 
-# “Legacy Outputs” aka P2PKH
+## “Legacy Outputs” aka P2PKH
 
 Pay to Public Key Hash was the first output type that got an address standard. Addresses for P2PKH outputs start with “1” and use the *Base58Check* encoding. The address encoding provides a checksum and represents a shorthand to communicate recipient information—which improved the UX over the prior situation which required the sender to handle the recipient’s full public key or non-standard output script to send a transaction.
 
@@ -18,7 +18,7 @@ Issues:
 - Case-sensitive
 - Bigger data footprint than Pay to Public Key
 
-# “Wrapped Segwit Outputs” aka P2SH-P2WPKH
+## “Wrapped Segwit Outputs” aka P2SH-P2WPKH
 
 Segwit aimed to introduce [a new family of output types](https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki) which we refer to as *native segwit*, but the authors realized that adoption of a new address format would take time. The segwit softfork additionally introduced *wrapped segwit* outputs as a transitional solution, to be forward-compatible to wallets that could send to P2SH addresses. Since P2SH was rolled out in March 2012 and already widely used for multisig, most wallet software supported sending to P2SH when segwit was activated in 2017.
 
@@ -36,11 +36,11 @@ Issues:
 - Redirection to the witness stack for evaluation adds extra data
 - Even bigger data footprint than P2PKH
 
-# Native Segwit Outputs
+## Native Segwit Outputs
 
 Instead of locking funds to a *P2SH Program*, the output script for native segwit outputs directly contains the *Witness Program*. This way, native segwit inputs only need a witness stack, and make do without the redirection data needed in the wrapped segwit construction, leaving only a zero-length stub for the input script. Native segwit outputs are represented with *bech32* addresses for version 0, and *bech32m* for version 1–16. The bech32 encoding is single-case, making it easier to note down and dictate as well as more efficient to encode in QR codes . The bech32 encoding is engineered to provide error-detection guarantees. Bech32 and bech32m addresses start with “bc1”.
 
-## 0) P2WPKH aka Native Segwit v0
+### 0) P2WPKH aka Native Segwit v0
 
 Often simply referred to as “native segwit”, Pay to Witness Public Key Hash outputs lock funds to a public key hash similar to how P2PKH works. However, P2WPKH inputs provide the public key and signature in the Witness Stack instead of the input script, thus benefiting from the witness discount. Bech32 addresses encoding version 0 native segwit outputs start with “bc1q”, because “q” encodes 0 in bech32.
 
@@ -50,7 +50,7 @@ Issues:
 
 - Bech32 addresses are still not supported by some wallets and services
 
-## 1) P2TR aka Taproot aka Native Segwit v1
+### 1) P2TR aka Taproot aka Native Segwit v1
 
 With the recent activation of Taproot, we add native segwit v1 outputs to our portfolio. Pay to Taproot outputs lock funds directly to a public key in the output’s witness program, which means (for single-sig uses) that the input only needs a single script argument, a signature, instead of needing to provide both a public key and signature like P2WPKH. P2TR uses Schnorr signatures, which are more compactly encoded than ECDSA signatures, reducing the signature size from 71-72 B to 64 B. This means that P2TR has the smallest data footprint even while the overall weight of input and output is slightly bigger than for P2WPKH. In addition, more complex spending conditions can be encoded in the leaves of the taptree that’s tweaked into the public key contained in the witness program. Bech32m addresses encoding P2TR outputs are longer than the bech32 addresses encoding P2WPKH outputs, since public keys are longer than the 20-byte hash used in P2WPKH. Addresses for P2TR outputs start with “bc1p”, because “p” encodes 1.
 
@@ -60,7 +60,7 @@ Issues:
 
 - Bech32m addresses are brand-new and not yet supported by many wallets and services
 
-# Cost Considerations
+## Cost Considerations
 
 ![Table with overview of raw length, weight, and vsize of output types](/images/output-types.png)
 Byte length vs weight vs vsize for single-sig output types
