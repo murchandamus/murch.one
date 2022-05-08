@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2022-05-07
-draft: true
+submitted: true
 ---
 
 ![Murch's avatar](/images/murch.png)
