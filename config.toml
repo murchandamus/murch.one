@@ -1,7 +1,0 @@
-baseURL = "http://murch.one/"
-languageCode = "en-us"
-title = "Murch ado about nothing"
-theme = "murchzen"
-
-dateformat="ISO8601"
-
