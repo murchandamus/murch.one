@@ -1,5 +1,5 @@
 ---
-title: "Responding to Jonald Fyookball's article on 'Lightning Network's Infeasibility'"
+title: "Responding to Jonald Fyookball's article on \"Lightning Network's Infeasibility\""
 date: 2017-06-27
 submitted: true
 ---
