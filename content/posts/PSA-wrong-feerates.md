@@ -11,7 +11,8 @@ tags: [feerates,terminology]
 
 We’ve been getting support requests from customers inquiring why their transaction’s fee rate is not matching the parameters they set.
 
-The problem is that popular blockchain explorers don’t get the fee rate right. Let’s look at the following transaction with two P2SH-P2WSH multisig inputs and six outputs: `cdeea0d6c37a046d5b7e13a75bc0c9842493f41dd5a97d248df43552ad9e15c8`
+The problem is that popular blockchain explorers don’t get the fee rate right. Let’s look at the following transaction with two P2SH-P2WSH multisig inputs and six outputs:
+`c​d​e​e​a​0​d​6​c​3​7​a​0​4​6​d​5​b​7​e​1​3​a​7​5​b​c​0​c​9​8​4​2​4​9​3​f​4​1​d​d​5​a​9​7​d​2​4​8​d​f​4​3​5​5​2​a​d​9​e​1​5​c​8​`
 
 The customer set a fee rate of 160.20 sat/B. Naturally, they were surprised when they saw what blockchain explorers are telling us:
 
