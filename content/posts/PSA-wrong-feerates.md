@@ -2,6 +2,8 @@
 title: "PSA: Wrong fee rates on block explorers"
 date: 2017-12-12
 submitted: true
+category: [bitcoin]
+tags: [feerates,terminology]
 ---
 
 *This article [originally appeared](https://murchandamus.medium.com/psa-wrong-fee-rates-on-block-explorers-48390cbfcc74) on my medium page on 2017-12-12.*  

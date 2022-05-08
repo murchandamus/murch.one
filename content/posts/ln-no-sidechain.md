@@ -3,7 +3,7 @@ title: "The Lightning Network is not a sidechain"
 date: 2016-03-08
 submitted: true
 category: [Lightning-Network]
-tags: [ln,terminology]
+tags: [terminology,sidechain]
 ---
 
 The Lightning network is not a sidechain.

@@ -2,6 +2,8 @@
 title: "A look at an early LN testnet topology"
 date: 2017-12-29
 submitted: true
+category: [lightning-network]
+tags: [topology]
 ---
 
 *This article originally [appeared](https://murchandamus.medium.com/a-look-at-an-early-ln-testnet-topology-a874a6ff41d9) on my medium site on 2017-12-29.*

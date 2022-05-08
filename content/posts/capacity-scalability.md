@@ -3,7 +3,7 @@ title: "Capacity vs Scalability"
 date: 2017-01-14
 submitted: true
 category: [bitcoin]
-tags: [terminology]
+tags: [terminology,blocksize-wars]
 ---
 
 Let's talk about terminology.

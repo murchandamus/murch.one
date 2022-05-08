@@ -2,6 +2,8 @@
 title: "Excited for Schnorr signatures"
 date: 2018-02-03
 submitted: true
+category: [bitcoin]
+tags: [taproot]
 ---
 *This article was [originally published](https://medium.com/hackernoon/excited-for-schnorr-signatures-a00ee467fc5f) on my medium page and hackernoon on 2018-02-03.*
 

@@ -2,6 +2,8 @@
 title: "2-of-3 inputs using Pay-to-Taproot"
 date: 2020-08-18
 submitted: true
+category: [bitcoin]
+tags: [multisig,output-types,taproot]
 ---
 
 *This article was [originally published](https://murchandamus.medium.com/2-of-3-multisig-inputs-using-pay-to-taproot-d5faf2312ba3) on my medium page on 2020-08-18.*  

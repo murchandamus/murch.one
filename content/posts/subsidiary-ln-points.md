@@ -3,7 +3,7 @@ title: "Some subsidiary points on Lightning Network"
 date: 2017-06-29
 submitted: true
 category: [lightning-network]
-tags: [ln]
+tags: [routing]
 ---
 
 *This article first [appeared](https://murchandamus.medium.com/some-subsidiary-points-on-lightning-network-cc68bc81d6f1) on my medium page on 2017-06-29.*
