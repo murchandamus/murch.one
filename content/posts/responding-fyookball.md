@@ -3,6 +3,7 @@ title: "Responding to Jonald Fyookball's article on 'Lightning Network's Infeasi
 date: 2017-06-27
 submitted: true
 ---
+*This article was originally [published](https://murchandamus.medium.com/i-have-just-read-jonald-fyookballs-article-https-medium-com-jonaldfyookball-mathematical-fd112d13737a) on my medium page on 2017-06-27.*
 
 I have just read [Jonald Fyookball's article](https://medium.com/@jonaldfyookball/mathematical-proof-that-the-lightning-network-cannot-be-a-decentralized-bitcoin-scaling-solution-1b8147650800) which claims to provide mathematical proof that the Lightning Network will fail to provide a 'Decentralized Bitcoin Scaling Solution'.
 
@@ -47,4 +48,3 @@ As there are many routes from each node to each other node, the network is self-
 
 As the model on which Fyookball is basing their calculations is already far-fetched, I will not bother addressing the math.
 
-*This article was originally [published](https://murchandamus.medium.com/i-have-just-read-jonald-fyookballs-article-https-medium-com-jonaldfyookball-mathematical-fd112d13737a) on my medium page on 2017-06-27. You may refer to the original post to read the comments from that time.*

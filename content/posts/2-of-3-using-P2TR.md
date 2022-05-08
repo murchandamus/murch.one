@@ -4,6 +4,7 @@ date: 2020-08-18
 submitted: true
 ---
 
+*This article was [originally published](https://murchandamus.medium.com/2-of-3-multisig-inputs-using-pay-to-taproot-d5faf2312ba3) on my medium page on 2020-08-18.*  
 *This article was amended on 2020–12–20 to improve the description of the P2TR output scripts. Thanks to Matthew Zipkin, for pointing out the prior imprecision.*
 
 The Bitcoin community has been [abuzz for a few years](https://medium.com/hackernoon/excited-for-schnorr-signatures-a00ee467fc5f) about bringing Schnorr signatures to Bitcoin. Since then, the idea has evolved into three formal Bitcoin Improvement Proposals: ‘[BIP340 — Schnorr Signatures for secp256k1](https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki)’, ‘[BIP341 — Taproot: SegWit version 1 spending rules](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki)’, and ‘[BIP342 — Validation of Taproot Scripts](https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki)’. Respectively, they define a standard for Schnorr signatures in Bitcoin, introduce the Taproot construction, and formalize the new Script v1 instruction set. Taproot also iterates on the previous proposal of Merklized Alternative Script Trees (MAST).
@@ -108,5 +109,3 @@ It turns out that a single 2-of-3 leaf in lieu of the two 2-of-2 leaves is both 
 {{< figure src="/images/2-of-3-costs.png" class="center" caption="Upper bound of input and output sizes for single-sig and 2-of-3 multisig" >}}
 
 The described 2-of-3 multisig scheme achieves input sizes of 57.5 vbytes for a keypath spend, 82.75 vbytes for the leaves using a hot backup key, and 107.5 vbytes for non-interactive backup spends. This results in a fee reduction by 45% for 2-of-3 inputs when switching from P2WSH to P2TR spending. In the uncommon case of a recovery transaction, the cost is negligibly increased for cold keys. Single-sig users are also incentivized to switch to P2TR as they save 11 vbytes on each input — the output cost is externalized on the sender.
-
-*This article was [originally published](https://murchandamus.medium.com/2-of-3-multisig-inputs-using-pay-to-taproot-d5faf2312ba3) on medium.*

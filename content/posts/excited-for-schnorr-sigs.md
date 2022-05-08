@@ -3,6 +3,7 @@ title: "Excited for Schnorr signatures"
 date: 2018-02-03
 submitted: true
 ---
+*This article was [originally published](https://medium.com/hackernoon/excited-for-schnorr-signatures-a00ee467fc5f) on my medium page and hackernoon on 2018-02-03.*
 
 If you’re keeping a finger on the pulse of Bitcoin development, you’ve probably already heard about Schnorr signatures and you probably won’t find much new here. You might rather want to check out Pieter Wuille’s recent [talk at BPASE18](https://www.youtube.com/watch?v=oTsjMz3DaLs), or Bryan Bishop’s [compilation of transcripts of Schnorr signature talks](http://diyhpl.us/~bryan/papers2/bitcoin/bitcoin-tech-dev-talks-schnorr-signatures.2018-02-01.pdf) whom this article heavily leans on.
 
@@ -48,4 +49,3 @@ The introduction of Schnorr signatures into Bitcoin requires a new OP_CODE for s
 *Thanks to Pieter Wuille for review.*  
 
 *Edit: Corrected the length of ECDSA DER-encoded signatures.*  
-*This article was [originally published](https://medium.com/hackernoon/excited-for-schnorr-signatures-a00ee467fc5f) on my medium page and hackernoon on 2018-02-03.*
