@@ -1,5 +1,5 @@
 ---
-title: "Submissions"
+title: "Articles"
 date: 2022-05-07
 submitted: true
 ---

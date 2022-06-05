@@ -4,6 +4,18 @@ theme: "murchzen"
 languageCode: "en-us"       # Set your language code (only needed for none multilingual sites).
 defaultContentLanguage: "en"
 
+menu:
+  main:
+  - name: Blog
+    url: /
+    weight: -1000
+  - name: Articles
+    url: /articles/
+    weight: -10
+  - name: About
+    url: /about/
+    weight: 100
+
 params:
   cookieConsent: false      # Show cookie consent form, default false.
   contact: "murch(remove-this)@murch.one"
@@ -22,9 +34,9 @@ params:
   logo: true                # Turn off the logo.
   logoPath: "/logo.png" # Relative path to site logo, defaults to "images/logo.png", no leading slash.
   mainSections:             # The sections you want to have listed on the front page.
-    - "posts"               # Default to the section with most content if not set.
-    - "submissions"         # Set to empty if no section should be listed.
-    - "about"               # Set to empty if no section should be listed.
+  - "posts"                 # Default to the section with most content if not set.
+  - "articles"              # Set to empty if no section should be listed.
+  - "about"                 # Set to empty if no section should be listed.
   microUsername: ""         # Your micro.blog username.
   mobileMenu: true          # Turn on a mobile menu on small screens, default false.
   piwikSiteId:              # Matamo site id
