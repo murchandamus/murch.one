@@ -17,7 +17,7 @@ Example: `1MDPuAy9WCbNQin71j9S3MKAAe9mGBRNVx`
 Issues:
 
 - High transaction weight
-- Case-sensitive
+- Case-sensitive addresses
 - Bigger data footprint than Pay to Public Key
 
 ## “Wrapped Segwit Outputs” aka P2SH-P2WPKH
@@ -34,13 +34,13 @@ Example: `3Mwz6cg8Fz81B7ukexK8u8EVAW2yymgWNd`
 
 Issues:
 
-- Case-sensitive
+- Case-sensitive addresses
 - Redirection to the witness stack for evaluation adds extra data
 - Even bigger data footprint than P2PKH
 
 ## Native Segwit Outputs
 
-Instead of locking funds to a *P2SH Program*, the output script for native segwit outputs directly contains the *Witness Program*. This way, native segwit inputs only need a witness stack, and make do without the redirection data needed in the wrapped segwit construction, leaving only a zero-length stub for the input script. Native segwit outputs are represented with *bech32* addresses for version 0, and *bech32m* for version 1–16. The bech32 encoding is single-case, making it easier to note down and dictate as well as more efficient to encode in QR codes . The bech32 encoding is engineered to provide error-detection guarantees. Bech32 and bech32m addresses start with “bc1”.
+Instead of locking funds to a *P2SH Program*, the output script for native segwit outputs directly contains the *Witness Program*. This way, native segwit inputs only need a witness stack, and make do without the redirection data needed in the wrapped segwit construction, leaving only a zero-length stub for the input script. Native segwit outputs are represented with *bech32* addresses for version 0, and *bech32m* for version 1–16. The bech32 encoding is single-case, making it easier to note down and dictate as well as more efficient to encode in QR codes. The bech32 encoding is engineered to provide error-detection guarantees. Bech32 and bech32m addresses start with “bc1”.
 
 ### 0) P2WPKH aka Native Segwit v0
 
