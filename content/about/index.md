@@ -9,7 +9,6 @@ submitted: true
 Hey. I’m a computer scientist based in New York City and work on Bitcoin stuff.
 
 You can also find me here:
-- Twitter: [@murchandamus](https://twitter.com/murchandamus)
 - Github: [Murchandamus](https://github.com/Murchandamus)
 - Stack Exchange: [Murch](http://bitcoin.stackexchange.com/users/5406/murch)
 
