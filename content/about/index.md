@@ -6,7 +6,7 @@ submitted: true
 
 ![Murch's avatar](/images/murch.png)
 
-Hey. I’m a computer scientist based in New York City and work on Bitcoin stuff.
+Hey. I’m a computer scientist based in Silicon Valley and work on Bitcoin stuff.
 
 You can also find me here:
 - Github: [Murchandamus](https://github.com/Murchandamus)
