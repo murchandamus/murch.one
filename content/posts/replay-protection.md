@@ -42,7 +42,7 @@ A user could therefore attempt to pay themselves with a low feerate transaction 
 {{< figure src="/images/conflicting-txs.png" class="center" caption="Bob received a transaction output *tx_B:0*. Bob creates a low-feerate transaction *tx_C* that sends his funds to himself. Once *tx_C* is confirmed, he sends a high-feerate transaction *tx_D* that spends the same *tx_B:0* and sends them to a different address. Only one of *tx_C* and *tx_D* can be confirmed in either chaintip as they both spend the same UTXO. Once both transactions are confirmed in their respective chaintip, Bob has successfully split his coin." >}}
 
 RDTS miners could still undermine such a splitting attempt (against their economic interest) by including the low-feerate transaction already confirmed in the Bitcoin chaintip instead of selecting the juicy high-feerate transaction offered on the RDTS chaintip.
-A split would only be reliably once the conflicting transactions have multiple confirmations on the respective chaintips.
+A split would only be reliable once the conflicting transactions have multiple confirmations on the respective chaintips.
 Once a user has access to a UTXO that is unique to one chaintip, the replay-protection can be easily propagated. Spending a replay-protected UTXO will extend the replay-protection to all outputs of that transaction.
 
 Beyond manually split coins, any outputs from Coinbase transactions will be inherently unique to that chaintip.
