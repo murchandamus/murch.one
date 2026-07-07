@@ -1,8 +1,7 @@
 baseurl: "http://murch.one/"
 title: "Murch ado about nothing"
-theme: "murchzen"
-languageCode: "en-us"       # Set your language code (only needed for none multilingual sites).
-defaultContentLanguage: "en"
+theme: "zen"
+locale: "en-us"       # Set your language code (only needed for none multilingual sites).
 
 menu:
   main:
@@ -32,7 +31,9 @@ params:
   jquery: false             # Add jQuery
   languageDir: ""           # Set ltr or rtl, defaults to ltr.
   logo: true                # Turn off the logo.
-  logoPath: "/logo.png" # Relative path to site logo, defaults to "images/logo.png", no leading slash.
+  logoPath: "images/logo.png" # Relative path to site logo, defaults to "images/logo.png", no leading slash.
+  logoHeight: 64
+  logoWidth: 64
   mainSections:             # The sections you want to have listed on the front page.
   - "posts"                  # Default to the section with most content if not set.
   - "articles"              # Set to empty if no section should be listed.
